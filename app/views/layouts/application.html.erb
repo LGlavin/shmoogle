@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shmoogle</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+
+<div class="navigation-container">
+  <ul class="nav">
+  <li>
+   <a class="active" href="#">Search</a>
+    </li>
+    <li> <a href="#"> Images </a> </li>
+    <li> <a href="#"> Maps </a> </li>
+    <li> <a href="#"> Play </a> </li>
+    <li> <a href="#"> Youtube </a> </li>
+    <li> <a href="#"> News </a> </li>
+    <li> <a href="#"> Gmail </a> </li>
+    <li> <a href="#"> Drive </a> </li>
+    <li> <a href="#"> Calendar </a> </li>
+
+  </ul>
+  </div>
+<div class="search-container">
+ <form>
+   <label> Shmoogle </label> 
+   <input type= "search" name="search">
+   <input type="submit" value="search">
+</form>
+
+</div>
+
+<div class="filters-container">
+
+<ul class = "search_filters">
+    <li> <a href="#"> Web </a> </li>
+    <li> <a href="#"> Images </a> </li>
+    <li> <a href="#"> Maps </a> </li>
+    <li> <a href="#"> Search Tools </a> </li>
+
+  </ul>
+</div>
+
+<div class="main-container">
+   <div class ="awesome_results">
+    <li> <a href="www.awsomesauce.com"> Awsome fake results Title </a> 
+    <h5>www.awesomesauce.com</h5> 
+      <p> Something that is more awesome than awesome. It is a modifyer of your basic awsome into a more awsome version. </p> </li>
+
+    </div>
+     
+     <div class = "twitter_search"> 
+        <li><a href="www.twitter.com"> Twitter Search </a>
+        <h5> www.twitter.com/SomethinToWatch </h5>
+       <p>Tweets about Snap Bird. By @elliotjaystocks http://snapbird.org is a genuinely useful tool, especially if you're looking for particular people who have @'d you.</p>
+       </li>
+     </div>
+    
+    <div class ="awesome_sauce">   
+      <li> <a href="www.awesomesauce.com"> Awsome Sauce </a> 
+      <h5>www.awesomesauce.com</h5>
+      <p>THe latest from Awsome Sauce (@Somethintowacthc)</p>
+
+    </li>
+    </div>
+    
+   
+    <div class="pininterest">
+    <li> <a href="www.piniterest.com"> Things that are full of Awsome sauce </a>
+    <h5>www.pininterest.com/awesomesauce</h5>
+    The only thing more awesome than awsomesauce is Pininterest.
+     </li>
+    </div>
+
+
+
+
+</div>
+
+
+<%= yield %>
+</body>
+</html>
